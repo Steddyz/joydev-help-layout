@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="./fundProfiles.scss" />
+    <title>Функции приложения</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="./fundProfiles.scss" rel="stylesheet" />
   </head>
   <body>
     <section class="solution-section">
       <div class="solution-container">
-        <div class="solution-title_container">
+        <div
+          class="solution-title_container"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
           <h2 class="solution-subtitle2">Профайлы фондов</h2>
           <p class="solution-description">
             Мы сделали отображение фондов ещё прозрачнее. Кликнув на иконку того
@@ -17,19 +22,30 @@
             всеми актуальными и завершенными делами.
           </p>
         </div>
-        <div class="image-container4">
+
+        <div class="image-container4" data-aos="fade-up" data-aos-delay="200">
           <img
             src="../../../img/sprites/delo7.png"
             alt="phone"
             class="phone-delo phone-delo-1"
+            data-aos="zoom-in-left"
+            data-aos-delay="300"
           />
           <img
             src="../../../img/sprites/delo8.png"
             alt="phone"
             class="phone-delo phone-delo-2"
+            data-aos="zoom-in-right"
+            data-aos-delay="400"
           />
         </div>
-        <div class="solution-title_container">
+
+        <div
+          class="solution-title_container"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-offset="150"
+        >
           <h2 class="solution-subtitle2">
             Подтверждение участия в помощи по QR-коду
           </h2>
@@ -40,19 +56,30 @@
             которого в приложении подтверждается опыт волонтёра.
           </p>
         </div>
-        <div class="image-container4">
+
+        <div class="image-container4" data-aos="fade-up" data-aos-delay="200">
           <img
             src="../../../img/sprites/delo9.png"
             alt="phone"
             class="phone-delo phone-delo-1"
+            data-aos="flip-left"
+            data-aos-delay="300"
           />
           <img
             src="../../../img/sprites/delo10.png"
             alt="phone"
             class="phone-delo phone-delo-2"
+            data-aos="flip-right"
+            data-aos-delay="400"
           />
         </div>
-        <div class="solution-title_container">
+
+        <div
+          class="solution-title_container"
+          data-aos="fade-up"
+          data-aos-duration="700"
+          data-aos-offset="150"
+        >
           <h2 class="solution-subtitle2">Диплинки на подопечных и события</h2>
           <p class="solution-description">
             Теперь пользователь самостоятельно может создать ссылку на
@@ -60,19 +87,35 @@
             пользователями или отправить любому человеку не из приложения.
           </p>
         </div>
-        <div class="image-container5">
+
+        <div class="image-container5" data-aos="fade-up" data-aos-delay="200">
           <img
             src="../../../img/sprites/delo11.png"
             alt="phone"
             class="phone-delo phone-delo-1"
+            data-aos="slide-up"
+            data-aos-delay="300"
           />
           <img
             src="../../../img/sprites/delo12.png"
             alt="phone"
             class="phone-delo phone-delo-2"
+            data-aos="slide-up"
+            data-aos-delay="400"
           />
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        easing: "ease-out-quad",
+        offset: 120,
+        mirror: false,
+      });
+    </script>
   </body>
 </html>

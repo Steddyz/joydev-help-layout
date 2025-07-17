@@ -3,62 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./searchFilter.scss" />
-    <title>Document</title>
+    <title>Поисковый фильтр</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="./searchFilter.scss" rel="stylesheet" />
   </head>
   <body>
     <section>
       <div class="solution-container">
-        <div class="solution-title_container">
+        <div
+          class="solution-title_container"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
           <h2 class="solution-subtitle">Поисковый фильтр</h2>
           <p class="solution-description__search">
             Опция, которая особенно понравилась пользователям. Сейчас можно
             посмотреть доступные дела по фильтрам:
           </p>
         </div>
+
         <div class="searchFilter-container">
           <img
             src="../../../img/sprites/star.svg"
             class="stars-filter stars-filter-1"
             alt="star"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="800"
           />
           <img
             src="../../../img/sprites/star.svg"
             class="stars-filter stars-filter-2"
             alt="star"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="800"
           />
+
           <div class="bg-light bg-light-3"></div>
 
-          <div class="searchFilter-left">
-            <img src="../../../img/sprites/searchFilter1.png" />
+          <div
+            class="searchFilter-left"
+            data-aos="fade-right"
+            data-aos-duration="900"
+          >
+            <img
+              src="../../../img/sprites/searchFilter1.png"
+              alt="Интерфейс поискового фильтра"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            />
           </div>
-          <div class="searchFilter-right">
+
+          <div
+            class="searchFilter-right"
+            data-aos="fade-left"
+            data-aos-duration="900"
+          >
             <ul class="searchFilter-list">
-              <li class="searchFilter-item">
-                <span class="searchFilter-icon"
-                  ><img src="../../../img//sprites/liItem.svg" /></span
-                ><span><b>«Все дела»</b> — все актуальные запросы</span>
+              <li
+                class="searchFilter-item"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <span class="searchFilter-icon">
+                  <img src="../../../img/sprites/liItem.svg" alt="Иконка" />
+                </span>
+                <span><b>«Все дела»</b> — все актуальные запросы</span>
               </li>
-              <li class="searchFilter-item">
-                <span class="searchFilter-icon"
-                  ><img src="../../../img//sprites/liItem.svg" /></span
-                ><span
-                  ><b>«Дела для меня»</b> — запросы, сформированные на основании
-                  навыков и местоположения пользователя</span
-                >
+
+              <li
+                class="searchFilter-item"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <span class="searchFilter-icon">
+                  <img src="../../../img/sprites/liItem.svg" alt="Иконка" />
+                </span>
+                <span>
+                  <b>«Дела для меня»</b> — запросы, сформированные на основании
+                  навыков и местоположения пользователя
+                </span>
               </li>
-              <li class="searchFilter-item">
-                <span class="searchFilter-icon"
-                  ><img src="../../../img//sprites/liItem.svg" /></span
-                ><span
-                  ><b>«Мой фильтр»</b> — выбор параметров, по которым
-                  пользователь может установить свои критерии поиска.</span
-                >
+
+              <li
+                class="searchFilter-item"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <span class="searchFilter-icon">
+                  <img src="../../../img/sprites/liItem.svg" alt="Иконка" />
+                </span>
+                <span>
+                  <b>«Мой фильтр»</b> — выбор параметров, по которым
+                  пользователь может установить свои критерии поиска.
+                </span>
               </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        easing: "ease-out-back",
+        offset: 120,
+        mirror: false,
+      });
+    </script>
   </body>
 </html>

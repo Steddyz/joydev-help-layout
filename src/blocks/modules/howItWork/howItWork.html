@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./howItWork.scss" />
-    <title>Document</title>
+    <title>Как работает сервис</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="./howItWork.scss" rel="stylesheet" />
   </head>
   <body>
     <section class="howItWork-section">
@@ -13,40 +14,72 @@
           src="../../../img/sprites/star.svg"
           class="stars stars-1"
           alt="star"
+          data-aos="fade-down"
+          data-aos-delay="100"
         />
+
         <div class="bg-light bg-light-3"></div>
 
-        <div class="howInWork-left">
-          <img src="../../../img/sprites/howItWorlPhone.png" />
+        <div
+          class="howInWork-left"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
+          <img src="../../../img/sprites/howItWorlPhone.png" alt="Приложение" />
         </div>
-        <div class="howInWork-right">
-          <h1 class="howInWork-title">Как работает сервис</h1>
+
+        <div
+          class="howInWork-right"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
+          <h1 class="howInWork-title" data-aos="fade-up" data-aos-delay="200">
+            Как работает сервис
+          </h1>
+
           <ul class="howInWork-list">
-            <li class="howInWork-item">
-              <span class="howItWork-icon"
-                ><img src="../../../img//sprites/liItem.svg" /></span
-              ><span>Выбираете подопечного</span>
+            <li class="howInWork-item" data-aos="fade-up" data-aos-delay="300">
+              <span class="howItWork-icon">
+                <img src="../../../img/sprites/liItem.svg" alt="Иконка" />
+              </span>
+              <span>Выбираете подопечного</span>
             </li>
-            <li class="howInWork-item">
-              <span class="howItWork-icon"
-                ><img src="../../../img//sprites/liItem.svg" /></span
-              ><span
+
+            <li class="howInWork-item" data-aos="fade-up" data-aos-delay="400">
+              <span class="howItWork-icon">
+                <img src="../../../img/sprites/liItem.svg" alt="Иконка" />
+              </span>
+              <span
                 >Делаете разовый перевод или оформляете подписку на помощь</span
               >
             </li>
-            <li class="howInWork-item">
-              <span class="howItWork-icon"
-                ><img src="../../../img//sprites/liItem.svg" /></span
-              >Средства перечисляются партнеру-организатору
+
+            <li class="howInWork-item" data-aos="fade-up" data-aos-delay="500">
+              <span class="howItWork-icon">
+                <img src="../../../img/sprites/liItem.svg" alt="Иконка" />
+              </span>
+              <span>Средства перечисляются партнеру-организатору</span>
             </li>
-            <li class="howInWork-item">
-              <span class="howItWork-icon"
-                ><img src="../../../img//sprites/liItem.svg" /></span
-              >Вы получаете отчёт
+
+            <li class="howInWork-item" data-aos="fade-up" data-aos-delay="600">
+              <span class="howItWork-icon">
+                <img src="../../../img/sprites/liItem.svg" alt="Иконка" />
+              </span>
+              <span>Вы получаете отчёт</span>
             </li>
           </ul>
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        easing: "ease-out-quad",
+        offset: 120,
+      });
+    </script>
   </body>
 </html>

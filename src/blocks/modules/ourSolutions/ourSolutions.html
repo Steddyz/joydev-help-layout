@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="./ourSolutions.scss" />
+    <title>Наши решения</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="./ourSolutions.scss" rel="stylesheet" />
   </head>
   <body>
     <section class="solution-section">
@@ -13,14 +14,28 @@
           src="../../../img/sprites/star.svg"
           class="starss starss-1"
           alt="star"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-duration="800"
         />
         <img
           src="../../../img/sprites/star.svg"
           class="starss starss-2"
           alt="star"
+          data-aos="fade-down"
+          data-aos-delay="300"
+          data-aos-duration="800"
         />
-        <h1 class="solution-title">Наши решения</h1>
-        <div class="solution-title_container">
+
+        <h1 class="solution-title" data-aos="fade-up" data-aos-duration="700">
+          Наши решения
+        </h1>
+
+        <div
+          class="solution-title_container"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
           <h2 class="solution-subtitle">Разработка раздела «Дело»</h2>
           <p class="solution-description">
             Мы разработали новый раздел в приложении, который позволил помогать
@@ -29,19 +44,30 @@
             транспортировкой в нужное место, ремонтом и другими задачами.
           </p>
         </div>
-        <div class="image-container">
+
+        <div class="image-container" data-aos="fade-up" data-aos-delay="200">
           <img
             src="../../../img/sprites/delo1.png"
             alt="phone"
             class="phone-delo phone-delo-1"
+            data-aos="zoom-in"
+            data-aos-delay="300"
           />
           <img
             src="../../../img/sprites/delo2.png"
             alt="phone"
             class="phone-delo phone-delo-2"
+            data-aos="zoom-in"
+            data-aos-delay="400"
           />
         </div>
-        <div class="solution-title_container">
+
+        <div
+          class="solution-title_container"
+          data-aos="fade-left"
+          data-aos-duration="800"
+          data-aos-offset="200"
+        >
           <h2 class="solution-subtitle">Анкета пользователя</h2>
           <p class="solution-description">
             Мы создали подробную анкету, которая позволила благотворительным
@@ -49,38 +75,65 @@
             пользователи теперь могут больше рассказать о своих навыках и опыте.
           </p>
         </div>
-        <div class="image-container2">
+
+        <div class="image-container2" data-aos="fade-up" data-aos-delay="200">
           <img
             src="../../../img/sprites/delo3.png"
             alt="phone"
             class="phone-delo phone-delo-1"
+            data-aos="zoom-in"
+            data-aos-delay="300"
           />
           <img
             src="../../../img/sprites/delo4.png"
             alt="phone"
             class="phone-delo phone-delo-2"
+            data-aos="zoom-in"
+            data-aos-delay="400"
           />
         </div>
-        <div class="solution-title_container">
+
+        <div
+          class="solution-title_container"
+          data-aos="fade-right"
+          data-aos-duration="800"
+          data-aos-offset="200"
+        >
           <h2 class="solution-subtitle">Отдельный экран со списком дел</h2>
           <p class="solution-description">
             Дополнительно созданный экран позволяет пользователям приложения
             видеть все запланированные дела.
           </p>
         </div>
-        <div class="image-container3">
+
+        <div class="image-container3" data-aos="fade-up" data-aos-delay="200">
           <img
             src="../../../img/sprites/delo5.png"
             alt="phone"
             class="phone-delo phone-delo-1"
+            data-aos="zoom-in"
+            data-aos-delay="300"
           />
           <img
             src="../../../img/sprites/delo6.png"
             alt="phone"
             class="phone-delo phone-delo-2"
+            data-aos="zoom-in"
+            data-aos-delay="400"
           />
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        easing: "ease-out-quad",
+        offset: 150,
+        mirror: false,
+      });
+    </script>
   </body>
 </html>

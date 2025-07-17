@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hero Section</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="styles.scss" />
   </head>
   <body>
@@ -13,21 +14,29 @@
           src="../../../img/sprites/star.svg"
           class="star star-1"
           alt="star"
+          data-aos="fade-down"
+          data-aos-delay="100"
         />
         <img
           src="../../../img/sprites/star.svg"
           class="star star-2"
           alt="star"
+          data-aos="fade-down"
+          data-aos-delay="200"
         />
         <img
           src="../../../img/sprites/star.svg"
           class="star star-3"
           alt="star"
+          data-aos="fade-down"
+          data-aos-delay="300"
         />
         <img
           src="../../../img/sprites/star.svg"
           class="star star-4"
           alt="star"
+          data-aos="fade-down"
+          data-aos-delay="400"
         />
 
         <div class="bg-light"></div>
@@ -35,21 +44,30 @@
 
         <div class="container-hero">
           <div class="container-left">
-            <h1>
+            <h1 data-aos="fade-up" data-aos-duration="800">
               <img src="../../../img/sprites/heroLogo.svg" alt="heroLogo" />
             </h1>
-            <p>
+            <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
               Первое мобильное приложение для адресной и прозрачной помощи
               пожилым людям
             </p>
-            <div class="download">
+            <div
+              class="download"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="600"
+            >
               <img
                 src="../../../img/sprites/downloadApp.svg"
                 alt="downloadApp"
               />
             </div>
           </div>
-          <div class="container-right">
+          <div
+            class="container-right"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
             <img
               src="../../../img/sprites/hero_joyDev.png"
               alt="App screenshot"
@@ -62,7 +80,18 @@
         src="../../../img/sprites/rectangleHero.svg"
         alt="zxc"
         class="rectImg"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
       />
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        easing: "ease-out-quad",
+      });
+    </script>
   </body>
 </html>

@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link href="./task.scss" />
+    <title>Задача приложения</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="./task.scss" rel="stylesheet" />
   </head>
   <body>
     <section class="howItWork-section">
@@ -13,27 +14,70 @@
           src="../../../img/sprites/star.svg"
           class="stars stars-5"
           alt="star"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="800"
         />
         <img
           src="../../../img/sprites/star.svg"
           class="stars stars-6"
           alt="star"
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          data-aos-duration="800"
         />
+
         <div class="bg-light bg-light-4"></div>
+
         <div class="screen screen-1"></div>
         <div class="screen screen-2"></div>
 
-        <div class="howInWork-left2">
-          <img src="../../../img/sprites/howItWorlPhone2.png" />
+        <div
+          class="howInWork-left2"
+          data-aos="fade-up-right"
+          data-aos-duration="900"
+        >
+          <img
+            src="../../../img/sprites/howItWorlPhone2.png"
+            alt="Интерфейс приложения"
+          />
         </div>
-        <div class="howInWork-right">
-          <h1 class="howInWork-title">Задача</h1>
-          <p class="howInWork-description">
+
+        <div
+          class="howInWork-right"
+          data-aos="fade-up-left"
+          data-aos-duration="900"
+        >
+          <h1
+            class="howInWork-title"
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-duration="700"
+          >
+            Задача
+          </h1>
+          <p
+            class="howInWork-description"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
             Обновить и расширить функционал приложения для удобной и прозрачной
             помощи подопечным благотворительного фонда.
           </p>
         </div>
       </div>
     </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        easing: "ease-out-back",
+        offset: 100,
+        mirror: false,
+      });
+    </script>
   </body>
 </html>
