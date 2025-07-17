@@ -1,0 +1,115 @@
+.solution-section {
+  margin-bottom: 100px;
+}
+
+.solution-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1300px;
+  gap: 60px;
+}
+
+.solution-title_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.solution-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 50px 0;
+}
+
+.starss {
+  position: absolute;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  animation: twinkle 3s infinite alternate;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+
+  &-1 {
+    top: -5%;
+    left: 30%;
+  }
+
+  &-2 {
+    top: 5%;
+    left: 65%;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.solution-subtitle {
+  font-size: 38px;
+  font-weight: 700;
+  width: 300px;
+}
+
+.solution-description {
+  font-size: 22px;
+  font-weight: 300;
+  margin: 0;
+  width: 500px;
+}
+
+.image-container {
+  background-color: #000;
+  border-radius: 24px;
+  padding: 40px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 40px;
+  overflow: hidden;
+  position: relative;
+
+  background-image: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 3px,
+      transparent 8px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 1px
+    );
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -480px;
+    left: 45%;
+    transform: translateX(-50%) rotate(130deg);
+    width: 1500px;
+    height: 1500px;
+    background-image: url("../../../img/sprites/cylinderWhite.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+  }
+}
+
+.phone-delo-1 {
+  align-self: center;
+  transform: translateY(17%);
+  align-items: flex-start;
+  z-index: 1;
+}
+
+.phone-delo-2 {
+  transform: translateY(5%);
+  z-index: 1;
+}
