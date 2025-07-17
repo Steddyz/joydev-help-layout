@@ -1,0 +1,156 @@
+.howItWork-section {
+  padding: 60px 20px;
+}
+
+.howItWork-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1300px;
+  gap: 60px;
+}
+
+.howInWork-left {
+  flex: 1;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  min-height: 70vh;
+  z-index: 4;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 35%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background-image: url("../../../img/sprites/cylinderBlack.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+  }
+}
+
+.howInWork-left img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 4;
+}
+
+.howInWork-right {
+  flex: 1;
+}
+
+.bg-light {
+  position: absolute;
+  right: 510px;
+  top: 40%;
+  transform: translateY(-50%);
+  width: 65%;
+  height: 70%;
+  background-image: url("../../../img/sprites/bgLight.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+  &-3 {
+    left: -220px;
+    top: 45%;
+    background-image: url("../../../img/sprites/bgLight3.svg");
+  }
+
+  &-4 {
+    left: -220px;
+    top: 45%;
+    background-image: url("../../../img/sprites/bgLight4.svg");
+  }
+}
+
+.howInWork-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.howInWork-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.stars {
+  position: absolute;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  animation: twinkle 3s infinite alternate;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+
+  &-1 {
+    top: 5%;
+    left: 1%;
+  }
+}
+.howInWork-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 18px 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 500px;
+}
+
+.howItWork-icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+.howItWork-icon img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .howItWork-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .howInWork-title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .howInWork-item {
+    font-size: 20px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .howInWork-title {
+    font-size: 28px;
+  }
+
+  .howInWork-item {
+    font-size: 18px;
+    gap: 15px;
+  }
+
+  .howItWork-icon {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -6,6 +6,39 @@ body {
   padding: 0;
 }
 
+.hero-body {
+  background-color: #232323;
+
+  background-image: repeating-linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 3px,
+      transparent 8px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.05) 0px,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px,
+      transparent 1px
+    );
+
+  .rectImg {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    transform: rotate(0.1deg);
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
+
 .hero-section {
   min-height: 100vh;
   background-color: #232323;
@@ -62,16 +95,22 @@ body {
 
   .bg-light {
     position: absolute;
-    right: 250px;
+    right: 510px;
     top: 40%;
     transform: translateY(-50%);
-    width: 40%;
-    height: 60%;
+    width: 25%;
+    height: 50%;
     background-image: url("../../../img/sprites/bgLight.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 0;
+
+    &-2 {
+      right: 350px;
+      top: 75%;
+      background-image: url("../../../img/sprites/bgLight2.svg");
+    }
   }
 
   .container-hero {
