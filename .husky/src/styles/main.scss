@@ -1,0 +1,39 @@
+// Переменные, миксины, функции
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+
+// CSS-файлы библиотек
+@import "vendor/libs";
+
+// Основное
+@import "base/fonts";
+@import "base/general";
+
+// БЭМ-блоки
+@import "../blocks/modules";
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "Gotham Pro", "Lato", "Open Sans", "Montserrat", "Raleway",
+    "Ubuntu", Calibri, Arial, sans-serif !important;
+}
+
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
